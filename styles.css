@@ -12,17 +12,17 @@ body{
     flex-direction: column;
 }
 .section{
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 nav{
     display: flex;
     justify-content: space-between;
 }
 .image-logo-box{
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 .try-it-btn{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     color: hsl(322, 100%, 66%);
     background-color: white;
     border: 5px solid hsl(322, 100%, 66%);
