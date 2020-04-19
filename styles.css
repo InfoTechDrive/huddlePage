@@ -6,3 +6,57 @@ body{
     margin: 0;
     padding: 0;
 }
+.container {
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    border: 5px solid red;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.image-logo-box{
+    border: 5px solid red;
+}
+.try-it-btn{
+    border: 5px solid red;
+    color: hsl(322, 100%, 66%);
+    background-color: white;
+    border: 5px solid hsl(322, 100%, 66%);
+    border-radius: 50px;
+    width: 150px;
+    border-width: 2px;
+}
+.build{
+    text-align: center;
+    font-family: 'Poppins';
+}
+.build h1{
+    font-size: 3rem;
+}
+.build p{
+    font-size: 16px;
+    padding: 0 20%;
+    }
+.build button{
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border-style: hidden;
+    border-radius: 30px;
+    width: 270px;
+    height: 50px;
+    font-weight: bold;
+}
+.mockup img{
+    max-width: 100%;
+}
+.communities{
+    display: flex;
+    justify-content: space-evenly;
+}
+.communities-formed img{
+    width: 30px;
+}
