@@ -1,64 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+@import url(./mobile.css) all and (max-device-width: 375px);
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
-@import url(mobile.css) screen;
 
 body{
+    font-family: 'Open sans', sans-serif;
     margin: 0;
-    padding: 0;
+}
+
+h1, h2{
+    font-family: 'Poppins';
 }
 .container {
-    margin: auto 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 100%;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+} 
+img {
+    max-width: 100%;
 }
-.section{
-    /* border: 5px solid red; */
+.btn{
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 50px;
+    background-color: #fff;
+    color: hsl(322, 100%, 66%);
+    padding: 15px 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-subscribe{
+    border-radius: 7px;
+    padding: 10px 25px;
+    font-size: 14px;
+}
+header{
+    padding: 20px 0;
 }
 nav{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
+    align-items: center;
 }
-.image-logo-box{
-    /* border: 5px solid red; */
-}
-.try-it-btn{
-    /* border: 5px solid red; */
-    color: hsl(322, 100%, 66%);
-    background-color: white;
-    border: 5px solid hsl(322, 100%, 66%);
-    border-radius: 50px;
-    width: 150px;
-    border-width: 2px;
+.boxes{
+    display: flex;
+    justify-content: space-between;
 }
 .build{
     text-align: center;
-    font-family: 'Poppins';
+    margin: 150px auto 100px auto;
 }
-.build h1{
-    font-size: 3rem;
+.build>p{
+    padding: 0 29%;
 }
-.build p{
-    font-size: 16px;
-    padding: 0 20%;
-    }
-.build button{
-    color: white;
-    background-color: hsl(322, 100%, 66%);
-    border-style: hidden;
-    border-radius: 30px;
-    width: 270px;
-    height: 50px;
-    font-weight: bold;
+.build>h1{
+    font-size: 2.5em;
 }
-.mockup img{
-    max-width: 100%;
+.community-box{
+    justify-content: space-around;    
 }
-.communities{
-    display: flex;
-    justify-content: space-evenly;
+.communities-formed>h2, .messages-sent>h2{
+    font-size: 3em;
 }
-.communities-formed img{
-    width: 30px;
+.flexs{
+    align-items: center;
+}
+.grow{
+    background-color: hsl(207, 100%, 98%);
+    background-image: url(./images/bg-section-top-desktop-1.svg);
 }

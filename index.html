@@ -4,108 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
   <link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <div class="container">
-    <!-- HEADER + NAV  -->
-    <header class="section">
+  <!-- HEADER + NAV  -->
+  <header>
+    <div class="container">
       <nav>
-        <div class="image-logo-box">
-          <img src="./images/logo.svg" alt="">
-        </div>  
-        <button class="try-it-btn">Try it free</button>
+          <img src="./images/logo.svg" alt="">  
+        <button class="btn">Try it free</button>
       </nav>
-    </header>
-
-    <!-- FIRST SECTION  -->
-    <section class="section build">
+      
+      <div class="flex build">
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
           your audience. Create connections with your users as you engage in genuine discussion. 
         </p>
-          <button>Get Started For Free</button>
-    </section>
+          <button class="btn btn-primary">Get Started For Free</button>
+      </div>
+      <img class="screen-mockups" src="./images/screen-mockups.svg" alt="screen-mockups">
+    </div>      
+  </header>
 
-    <!-- SECOND SECTION + MOCKUPS  -->
-    <section class="section mockup">
-        <img src="./images/screen-mockups.svg" alt="screen-mockups">
-    </section>
+  <main>
+    <section class="container">
+      <div class="boxes community-box">
+        <div class="flexs communities-formed">
+          <img src="./images/icon-communities.svg" alt="icon-communities">
+          <h2>1.4k+</h2>
+          <p>Communities Formed</p>
+        </div>
+        <div class="flexs messages-sent">
+          <img src="./images/icon-messages.svg" alt="icon-messages">
+          <h2>2.7m+</h2>
+          <p>Messages Sent</p>
+        </div>
+      </div>  
 
-    <!-- THRID SECTION  -->
-    <section class="section communities">
-      <div class="communities-formed">
-        <img src="./images/icon-communities.svg" alt="icon-communities">
-        <h2>1.4k+</h2>
-        <p>Communities Formed</p>
+      
+      <div class="boxes flexs grow">
+        <div class="flex">
+          <h2>Grow Together</h2>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
+        <div>
+          <img src="./images/illustration-grow-together.svg" alt="let's grow Together">
+        </div>
       </div>
-      <div class="messages-sent">
-        <img src="./images/icon-messages.svg" alt="icon-messages">
-        <h2>2.7m+</h2>
-        <p>Messages Sent</p>
-      </div>
-    </section>
 
-    <!-- FOURTH SECTION  -->
-    <section class="section">
-      <div>
-        <h3>Grow Together</h3>
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
-          Think of the insightful conversations you miss out on with a feedback form.
-        </p>
+      
+      <div class="boxes flexs">
+        <div>
+          <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+        </div>
+        <div class="flexs">
+          <h2>Flowing Conversations</h2>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+            just-in-time loading for a more natural flow.
+          </p>
+        </div>
       </div>
-      <div>
-        <img src="./images/illustration-grow-together.svg" alt="let's grow Together">
-      </div>
-    </section>
 
-    <!-- FIFTH SECTION  -->
-    <section class="section">
-      <div>
-        <h3>Flowing Conversations</h3>
-        <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-          just-in-time loading for a more natural flow.
-        </p>
-      </div>
-      <div>
-        <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
-      </div>
-    </section>
-
-    <!-- SIX SECTION  -->
-    <section class="section">
-      <div>
-        <h3>Your Users</h3>
-        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-          once signed in to your app, your users can start chatting immediately.
-        </p>
-      </div>
-      <div>
-        <img src="./images/illustration-your-users.svg" alt="Your Users">
+      <!-- SIX SECTION  -->
+      <div class="boxes flexs">
+        <div class="flex">
+          <h2>Your Users</h2>
+          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+            once signed in to your app, your users can start chatting immediately.
+          </p>
+        </div>
+        <div>
+          <img src="./images/illustration-your-users.svg" alt="Your Users">
+        </div>
       </div>
     </section>
-
-    <!-- SEVENTH SECTION  -->
-    <section class="section">
-      <h3>Ready To Build Your Community?</h3>
-      <button>Get Started For Free</button>
-    </section>
-
+  </main>
+  <div class="container flexs">
+    <h2>Ready To Build Your Community?</h2>
+    <button class="btn btn-primary btn-big">Get Started For Free</button>
   </div>
-  <footer>
+
+  <footer class="container">
     <section>
       <div>
         <div><img src="./images/logo.svg" alt=""></div>
@@ -120,11 +105,21 @@
           <img src="./images/icon-email.svg" alt="">
           <a href="mailto:adeinfo2015@gmail.com">adeinfo2015@gmail.com</a>
         </div>
-        <div>
-          <a href="facebook"><img src="./images/icon-messages.svg" alt=""></a>
-          <a href="instagram"><img src="./images/icon-messages.svg" alt=""></a>
-          <a href="twitter"><img src="./images/icon-messages.svg" alt=""></a>
-        </div>
+      </div>
+      <div>
+        <h2>NEWSLETTER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.
+        </p>
+        <input type="search" name="" id="" placeholder="Email Address">
+        <button class="btn btn-primary btn-subscribe">Subscribe</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <a href="facebook"><img src="./images/icon-messages.svg" alt=""></a>
+        <a href="instagram"><img src="./images/icon-messages.svg" alt=""></a>
+        <a href="twitter"><img src="./images/icon-messages.svg" alt=""></a>
       </div>
     </section>
     <p class="attribution">
