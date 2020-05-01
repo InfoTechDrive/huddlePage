@@ -1,3 +1,48 @@
 body{
-    background-color: #f3f3f3;
+    background-color: #f4f4f4;
+}
+nav>button.btn{
+    padding: 10px 33px;
+}
+nav>img{
+    width: 50%;
+}
+div.build>p{
+    padding: 0 5px;
+}
+section>div.community-box{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+div.boxes.flexs.grow{
+    flex-direction: column-reverse;
+}
+div.boxes.flexs.grow>.flex{
+    text-align: center;
+} 
+div.boxes.flexs.flow{
+    flex-direction: column;
+}
+div.boxes.flexs.flow>div{
+    text-align: center;
+}
+div.boxes.flexs.user-section{
+    flex-direction: column-reverse;
+}
+div.boxes.flexs.user-section>div{
+    text-align: center;
+}
+section.footer-flex{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+div.footer-huddle-space {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+.newsletter{
+    text-align: center;
 }
